@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>엄마의 귀촌 생활</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SD3Y1XE050"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SD3Y1XE050');
+    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9456511687786459"
      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -37,6 +45,16 @@
             <p>강원도 둔내의 맑은 공기 속에 자리 잡은 엄마의 새집입니다. 이곳에서 평화로운 전원생활을 즐기고 계십니다.</p>
         </section>
 
+        <section id="gallery">
+            <h2>귀촌 갤러리</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                <img src="https://via.placeholder.com/300x200.png?text=Vegetable+Garden" alt="텃밭 풍경">
+                <img src="https://via.placeholder.com/300x200.png?text=Morning+Mist" alt="아침 안개">
+                <img src="https://via.placeholder.com/300x200.png?text=Firewood" alt="장작 더미">
+                <img src="https://via.placeholder.com/300x200.png?text=Wild+Flowers" alt="들꽃">
+            </div>
+        </section>
+
         <section id="cats">
             <h2>특별한 손님, 길고양이</h2>
             <img src="https://via.placeholder.com/600x400.png?text=Stray+Cats" alt="길고양이">
@@ -47,6 +65,18 @@
             <h2>단전호흡으로 찾는 마음의 평화</h2>
             <img src="https://via.placeholder.com/600x400.png?text=Dahnjeon+Breathing" alt="단전호흡">
             <p>매일 아침, 자연과 함께 단전호흡을 통해 몸과 마음의 건강을 다스리는 시간을 갖습니다.</p>
+        </section>
+
+        <section id="faq">
+            <h2>자주 묻는 질문</h2>
+            <details style="margin-bottom: 1rem; cursor: pointer;">
+                <summary style="font-weight: bold; color: var(--accent-color);">둔내의 겨울은 춥지 않나요?</summary>
+                <p style="padding-left: 1rem;">강원도라 춥긴 하지만, 맑은 공기와 따뜻한 벽난로가 있어 운치 있는 겨울을 보낼 수 있습니다.</p>
+            </details>
+            <details style="margin-bottom: 1rem; cursor: pointer;">
+                <summary style="font-weight: bold; color: var(--accent-color);">나뭇가지는 어떤 용도인가요?</summary>
+                <p style="padding-left: 1rem;">땔감, 인테리어 소품, 정원 가꾸기 등 다양한 용도로 활용 가능합니다.</p>
+            </details>
         </section>
 
         <section id="contact">
@@ -73,16 +103,7 @@
             <h2>나누고 싶은 이야기</h2>
             <div id="disqus_thread"></div>
             <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
+                (function() {
                 var d = document, s = d.createElement('script');
                 s.src = 'https://https-product-builder-first-188-pages-dev-cats.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());

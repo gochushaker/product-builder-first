@@ -9,8 +9,10 @@ class MainNavigation extends HTMLElement {
     nav.innerHTML = `
       <ul>
         <li><a href="#house">새로운 보금자리</a></li>
+        <li><a href="#gallery">갤러리</a></li>
         <li><a href="#cats">특별한 손님</a></li>
         <li><a href="#breathing">마음의 평화</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
         <li><a href="#contact">나뭇가지 문의</a></li>
       </ul>
     `;
