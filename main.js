@@ -11,6 +11,7 @@ class MainNavigation extends HTMLElement {
         <li><a href="#house">새로운 보금자리</a></li>
         <li><a href="#cats">특별한 손님</a></li>
         <li><a href="#breathing">마음의 평화</a></li>
+        <li><a href="#contact">나뭇가지 문의</a></li>
       </ul>
     `;
 
