@@ -98,4 +98,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     localStorage.setItem('theme', theme);
   });
+
+  // Random Task Logic
+  const tasks = [
+    "나뭇가지 자르기",
+    "텃밭 잡초 뽑기",
+    "길고양이 사료 챙겨주기",
+    "마당 낙엽 쓸기",
+    "시원한 공기 마시며 단전호흡 30분",
+    "마당에 물 주기",
+    "햇볕에 고추 말리기",
+    "이웃과 시원한 차 한 잔 하기",
+    "텃밭에서 상추 따기",
+    "새소리 들으며 명상하기",
+    "창문 닦으며 바깥 풍경 구경하기",
+    "장작 정리하기"
+  ];
+
+  const taskButton = document.getElementById('task-button');
+  const taskDisplay = document.getElementById('task-display');
+
+  if (taskButton && taskDisplay) {
+    taskButton.addEventListener('click', () => {
+      // Add a small animation effect
+      taskDisplay.style.opacity = 0;
+      taskButton.style.transform = 'scale(0.95)';
+      
+      setTimeout(() => {
+        const randomIndex = Math.floor(Math.random() * tasks.length);
+        taskDisplay.textContent = `오늘의 할일: ${tasks[randomIndex]} 🌿`;
+        taskDisplay.style.opacity = 1;
+        taskDisplay.style.transition = 'opacity 0.3s ease';
+        taskButton.style.transform = 'scale(1)';
+      }, 150);
+    });
+
+    // Button hover effects
+    taskButton.addEventListener('mouseover', () => {
+      taskButton.style.backgroundColor = 'var(--primary-color)';
+    });
+    taskButton.addEventListener('mouseout', () => {
+      taskButton.style.backgroundColor = 'var(--accent-color)';
+    });
+  }
 });
