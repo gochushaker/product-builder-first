@@ -25,6 +25,7 @@ class MainNavigation extends HTMLElement {
         background-color: var(--accent-color, #556B2F);
         padding: 0.5rem 0;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: background-color 0.3s;
       }
       ul {
         list-style: none;
@@ -39,7 +40,7 @@ class MainNavigation extends HTMLElement {
         padding: 0.8rem 1.5rem;
         font-family: var(--font-headers, 'Garamond', serif);
         font-size: 1.2em;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, color 0.3s;
       }
       li a:hover {
         background-color: rgba(255, 255, 255, 0.1);
@@ -66,6 +67,7 @@ class CustomFooter extends HTMLElement {
                 background-color: var(--primary-color, #8B4513);
                 color: var(--secondary-color, #F5DEB3);
                 margin-top: 2rem;
+                transition: background-color 0.3s, color 0.3s;
             }
         `;
 
@@ -76,3 +78,24 @@ class CustomFooter extends HTMLElement {
 
 customElements.define('main-navigation', MainNavigation);
 customElements.define('custom-footer', CustomFooter);
+
+// Theme Toggle Logic
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme') || 'light';
+
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+
+  themeToggle.addEventListener('click', () => {
+    let theme = 'light';
+    if (document.documentElement.getAttribute('data-theme') !== 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      theme = 'dark';
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    localStorage.setItem('theme', theme);
+  });
+});
