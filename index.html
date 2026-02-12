@@ -43,6 +43,26 @@
             <img src="https://via.placeholder.com/600x400.png?text=Dahnjeon+Breathing" alt="단전호흡">
             <p>매일 아침, 자연과 함께 단전호흡을 통해 몸과 마음의 건강을 다스리는 시간을 갖습니다.</p>
         </section>
+
+        <section id="contact">
+            <h2>나뭇가지가 필요하신가요?</h2>
+            <p>잘 가꾸어진 나무에서 나온 좋은 나뭇가지들을 나누고 있습니다. 필요하신 분은 아래 양식을 작성해주세요.</p>
+            <form action="https://formspree.io/f/xaqdeydd" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" required placeholder="성함을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="연락처를 입력해주세요 (예: 010-0000-0000)">
+                </div>
+                <div class="form-group">
+                    <label for="message">메시지 (선택)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="문의하실 내용을 적어주세요"></textarea>
+                </div>
+                <button type="submit" class="submit-button">문의하기</button>
+            </form>
+        </section>
     </main>
 
     <custom-footer></custom-footer>
