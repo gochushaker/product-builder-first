@@ -1,14 +1,40 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엄마의 귀촌 생활</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <h1>엄마의 귀촌 생활</h1>
+        <p>강원도 둔내에서의 새로운 시작</p>
+    </header>
+    <main-navigation></main-navigation>
+
+    <main>
+        <section id="house">
+            <h2>새로운 보금자리</h2>
+            <img src="https://via.placeholder.com/600x400.png?text=Modern+House+in+Dunnae" alt="둔내의 새집">
+            <p>강원도 둔내의 맑은 공기 속에 자리 잡은 엄마의 새집입니다. 이곳에서 평화로운 전원생활을 즐기고 계십니다.</p>
+        </section>
+
+        <section id="cats">
+            <h2>특별한 손님, 길고양이</h2>
+            <img src="https://via.placeholder.com/600x400.png?text=Stray+Cats" alt="길고양이">
+            <p>집 주변을 찾아오는 길고양이들에게 따뜻한 밥을 챙겨주시며 작은 생명들과 교감하십니다.</p>
+        </section>
+
+        <section id="breathing">
+            <h2>단전호흡으로 찾는 마음의 평화</h2>
+            <img src="https://via.placeholder.com/600x400.png?text=Dahnjeon+Breathing" alt="단전호흡">
+            <p>매일 아침, 자연과 함께 단전호흡을 통해 몸과 마음의 건강을 다스리는 시간을 갖습니다.</p>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="main.js" type="module"></script>
 </body>
 </html>
